@@ -52,7 +52,7 @@ public class Ejercicio5 {
         min = read.nextInt(); // * Para min
 
         // ? Salto de línea triple
-        System.out.println("\n-----------------------------\n");
+        System.out.println("\n<<<<<<----------------->>>>>>\n");
 
         // ! Mostramos el resultado
         System.out.println("Números aleatorios entre 0 y 1: ");
