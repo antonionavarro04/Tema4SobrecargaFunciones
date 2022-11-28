@@ -27,7 +27,7 @@ public class Ejercicio5 {
     static void numerosAleatorios (int contador, int max, int min) {
         // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
         do{
-            System.out.println(Math.random() * (max - min) + min);
+            System.out.println(Math.random() * (max - min + 1) + min);
             contador--;
         } while (contador != 0);
     }
