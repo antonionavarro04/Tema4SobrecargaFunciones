@@ -26,27 +26,27 @@ public class Ejercicio1 {
         double doubleNum2;
 
         // ^ Definimos la variable read como Scanner y cambiamos su formato a US
-        Scanner read = new Scanner(System.in);
+        final Scanner read = new Scanner(System.in);
         read.useLocale(Locale.US);
 
         // ! Pedimos los números al Usuario
-        System.out.print("Introduce el primer número: ");
-        intNum1 = read.nextInt(); // * Para num1
-        System.out.print("Introduce el segundo número: ");
-        intNum2 = read.nextInt(); // * Para num2
-
-        // ? Igualamos las variables double a las int
-        doubleNum1 = intNum1;
-        doubleNum2 = intNum2;
+        System.out.print("Introduce el primer número entero: ");
+        intNum1 = read.nextInt(); // * Para intNum1
+        System.out.print("Introduce el segundo número entero: ");
+        intNum2 = read.nextInt(); // * Para intNum2
+        System.out.print("Introduce el primer número decimal: ");
+        doubleNum1 = read.nextDouble(); // * Para doubleNum1
+        System.out.print("Introduce el segundo número decimal: ");
+        doubleNum2 = read.nextDouble(); // * Para doubleNum2
+        
+        // ^ Cerramos el Scanner tras su uso
+        read.close();
 
         System.out.println("\n-----------------------------\n");
 
         // ! Mostramos el resultado
-        System.out.println("La suma de los números es: " + suma(intNum1, intNum2));
-        System.out.println("La suma de los números es: " + suma(doubleNum1, doubleNum2));
-
-        // ^ Cerramos el Scanner
-        read.close();
+        System.out.println("La suma de los números enteros es: " + suma(intNum1, intNum2));
+        System.out.println("La suma de los números decimales es: " + suma(doubleNum1, doubleNum2));
 
         // € Hecho por Antonio Navarro
     }
