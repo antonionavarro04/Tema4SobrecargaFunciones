@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class Ejercicio5 {
-    // ? Método numerosAleatorios contador de numeros
+    // ? Método numerosAleatorios con contador de numeros
     static void numerosAleatorios (int contador) {
         // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
         do{
@@ -14,7 +14,7 @@ public class Ejercicio5 {
         } while (contador != 0);
     }
 
-    // ? Método numerosAleatorios contador de numeros y rango maximo
+    // ? Método numerosAleatorios con contador de numeros y rango maximo
     static void numerosAleatorios (int contador, int max) {
         // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
         do{
@@ -23,7 +23,7 @@ public class Ejercicio5 {
         } while (contador != 0);
     }
 
-    // ? Método numerosAleatorios contador de numeros, rango maximo y minimo
+    // ? Método numerosAleatorios con contador de numeros, rango maximo y minimo
     static void numerosAleatorios (int contador, int max, int min) {
         // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
         do{
