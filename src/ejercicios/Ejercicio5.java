@@ -7,8 +7,7 @@ import java.util.Locale;
 public class Ejercicio5 {
     // ? Método numerosAleatorios con contador de numeros
     static void numerosAleatorios (int contador) {
-        // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
-        do{
+        do{ // ! Mediante un bucle do-while generamos los numeros aleatorios hasta que el contador llegue a 0
             System.out.println((Math.random()));
             contador--;
         } while (contador != 0);
@@ -16,18 +15,38 @@ public class Ejercicio5 {
 
     // ? Método numerosAleatorios con contador de numeros y rango maximo
     static void numerosAleatorios (int contador, int max) {
-        // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
-        do{
-            System.out.println(Math.random() * max);
+        // ^ Definimos la variable num para almacenar el numero aleatorio
+        double num = 0;
+
+        do{ // ! Mediante un bucle do-while generamos los numeros aleatorios hasta que el contador llegue a 0
+            // ! Generamaos el numero aleatorio
+            num = Math.random() * max;
+
+            // ! Sumamos 0.5
+            num += 0.5;
+
+            // ! Imprimimimos el numero redondeado
+            System.out.println((int)num);
+
             contador--;
         } while (contador != 0);
     }
 
     // ? Método numerosAleatorios con contador de numeros, rango maximo y minimo
     static void numerosAleatorios (int contador, int max, int min) {
-        // ! Mediante un bucle for generamos los numeros aleatorios hasta que el contador sea 0
-        do{
-            System.out.println(Math.random() * (max - min) + min);
+        // ^ Definimos la variable num para almacenar el numero aleatorio
+        double num = 0;
+        
+        do{ // ! Mediante un bucle do-while generamos los numeros aleatorios hasta que el contador llegue a 0
+            // ! Generamaos el numero aleatorio
+            num = Math.random() * (max - min) + min;
+
+            // ! Sumamos 0.5
+            num += 0.5;
+
+            // ! Imprimimimos el numero redondeado
+            System.out.println((int)num);
+            
             contador--;
         } while (contador != 0);
     }
@@ -64,7 +83,7 @@ public class Ejercicio5 {
         // ! Mostramos el resultado
         System.out.println("Números aleatorios entre 0 y " + max + ":");
         numerosAleatorios(contador, max);
-
+        
         // ? Salto de línea triple
         System.out.println("\n-----------------------------\n");
 
