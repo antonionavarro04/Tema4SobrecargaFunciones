@@ -63,7 +63,7 @@ public class Ejercicio5 {
         read.useLocale(Locale.US);
 
         // ! Pedimos los números al Usuario
-        System.out.print("Introduce el número de números aleatorios que quieres: ");
+        System.out.print("Introduce cuantos números aleatorios a generar: ");
         contador = read.nextInt(); // * Para contador
         System.out.print("Introduce el número máximo: ");
         max = read.nextInt(); // * Para max
